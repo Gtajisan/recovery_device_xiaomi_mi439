@@ -28,13 +28,6 @@
 
 import /init.recovery.qcom_decrypt.rc
 
-service detect-dynamic-partitions /system/bin/detect-dynamic-partitions.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
-
 service set-device-props /system/bin/set-device-props.sh
     user root
     group root
@@ -56,7 +49,6 @@ on fs
 on init
     write /proc/sys/dev/dt2w 1
     setprop prepdecrypt.loglevel 2
-    start detect-dynamic-partitions
     start set-device-props
     exec u:r:recovery:s0 -- /system/bin/resetprop ro.boot.verifiedbootstate orange
 
