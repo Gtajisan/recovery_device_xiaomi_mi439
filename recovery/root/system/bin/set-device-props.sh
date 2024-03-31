@@ -1,4 +1,4 @@
-#!/sbin/sh
+#!/system/bin/sh
 
 set_device_codename() {
 	resetprop "ro.build.product" "$1"
