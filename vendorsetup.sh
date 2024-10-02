@@ -51,7 +51,7 @@ export OF_QUICK_BACKUP_LIST="/boot;/dtbo;"
 
 # Some about us
 export OF_MAINTAINER="AFK FARHAN"
-export OF_MAINTAINER_AVATAR="device/Xiaomi/sdm439/maintainer.png"
+export OF_MAINTAINER_AVATAR="device/xiaomi/mi439/maintainer.png"
 export FOX_VERSION="R11.1_9-4.19"
 export FOX_BUILD_TYPE="STABLE"
 export FOX_VARIANT="A12"
